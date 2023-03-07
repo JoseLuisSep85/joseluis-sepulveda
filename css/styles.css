@@ -7,17 +7,39 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px 1fr 90px;
+    grid-template-areas:
+    "header     header  header  header"
+    "main        main   main    main"
+    "footer     footer  footer  footer";
+}
 
-/* header */
-
-header {
+.header {
+    grid-area: header;
     position: sticky;
     top: 0;
 }
 
+.main {
+    grid-area: main;
+    width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(54,165,238);
+}
+
+
+/* header */
+
+
 .menu {
     width: 100%;
-    background-color: rgb(54, 165, 238);
+    background-color: rgb(54,165,238);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +51,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    gap: 25px;
+    gap: 10px;
 }
 
 
@@ -45,62 +67,60 @@ header {
 
 /* main */
 
-main {
+.principal {
     background-color: black;
-}
-
-.introduccion__items {
-    color: white;
-    text-align: justify;
-    padding: 60px;
-    gap: 30px;
-
-}
-
-.introduccion__items img {
-    width: 100%;
-}
-
-.introduccion__items p {
-    display: flex;
-    width: 800px;
-    margin: auto;
-    font-size: 20px;
-}
-
-.biografia {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.biografia__item {
-    color: white;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    padding: 25px;
     gap: 10px;
-    width: 50%;      
+    justify-content: space-between;
 }
 
-.biografia__item p {
-    font-size: 18px;
+
+.biografia {
+    display:flex;
+
 }
 
-.titulo {
-    font-size: 44px;
-    font-weight: 700;
-    text-transform: uppercase;
+.principal__items {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.principal__img {
+    width: 90%;
+    margin: auto;
+}
+
+.principal__titulo {
     text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
 
 }
 
-.titulo-artista {
-    font-size: 35px;
-    font-weight: 700;
-    text-transform: initial;
+.principal__subtitulo {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2rem;
 
 }
+
+.principal__parrafo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
 
 .discos {
     color: white;
@@ -108,6 +128,11 @@ main {
     flex-wrap: wrap;
     justify-content: center;
  
+}
+
+.disco__titulo {
+    text-align: center;
+
 }
 
 .disco__item {
@@ -120,10 +145,6 @@ main {
 
 .disco__item img {
     width: 100%;
-}
-
-.disco__item h2 {
-    text-align: center;
 }
 
 .disco__item video {
@@ -170,23 +191,45 @@ main {
 
 /* footer */
 
-.pie-de-pagina {
-    background-color: rgb(54, 165, 238);
+.footer__items {
     color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: smaller;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;    
+    padding: 10px;
+    gap: 10px;
+    
+
 }
+
 
 .logo-pie-derecho-reservado {
     width: 12px;
 }
 
 .social-media {
-  width: 20px;
-  height: auto;
-  display: flex;
+    width: 20px;
+    height: auto;
+    display: flex;
+}
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+    .principal__parrafo {
+        font-size: 16px;
+        width: 95%;
+    
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+
+    .footer__items {
+        text-align: center;
+    }
 }
