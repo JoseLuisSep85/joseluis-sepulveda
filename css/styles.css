@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(54, 165, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px 10px 80px;
+    align-content: center;
+}
+
+.menu__item {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 25px;
+}
+
+
+.menu__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* main */
+
+main {
+    background-color: black;
+}
+
+.introduccion__items {
+    color: white;
+    text-align: justify;
+    padding: 60px;
+    gap: 30px;
+
+}
+
+.introduccion__items img {
+    width: 100%;
+}
+
+.introduccion__items p {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.biografia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.biografia__item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 25px;
+    gap: 10px;
+    width: 50%;      
+}
+
+.biografia__item p {
+    font-size: 18px;
+}
+
+.titulo {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.titulo-artista {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: initial;
+
+}
+
+.discos {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+.disco__item {
+    padding: 20px;
+    text-align: justify;
+    width: 450px;
+    gap: 30px;
+    
+}
+
+.disco__item img {
+    width: 100%;
+}
+
+.disco__item h2 {
+    text-align: center;
+}
+
+.disco__item video {
+    width: 100%;
+}
+
+.formulario {
+    background-color: white;
+    margin-left: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    display: flex;
+}
+
+.formulario__nombre {
+    width: 400px;
+    height: 30px;
+}
+
+.formulario textarea {
+    width: 400px;
+    height: 300px;
+}
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.formulario__check {
+    display: flex;
+    width: 100%
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+
+/* footer */
+
+.pie-de-pagina {
+    background-color: rgb(54, 165, 238);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: smaller;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-pie-derecho-reservado {
+    width: 12px;
+}
+
+.social-media {
+  width: 20px;
+  height: auto;
+  display: flex;
+}
