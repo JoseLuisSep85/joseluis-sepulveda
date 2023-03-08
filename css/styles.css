@@ -157,41 +157,16 @@
     width: 100%;
 }
 
-.formulario {
-    background-color: white;
-    margin-left: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    display: flex;
-}
-
-.formulario__nombre {
-    width: 400px;
-    height: 30px;
-}
-
-.formulario textarea {
-    width: 400px;
-    height: 300px;
-}
-
-.formulario label {
+.form {
+    width: 500px;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
-    padding: 5px;
 }
 
-.formulario__check {
+.col-auto {
     display: flex;
-    width: 100%
-}
-
-.boton {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-
+    justify-content: end;
 }
 
 
