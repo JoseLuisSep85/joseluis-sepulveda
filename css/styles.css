@@ -30,7 +30,7 @@
 
 .footer {
     grid-area: footer;
-    background-color: rgb(54,165,238);
+    background-color: rgb(10, 115, 186);
 }
 
 
@@ -39,7 +39,7 @@
 
 .menu {
     width: 100%;
-    background-color: rgb(54,165,238);
+    background-color: rgb(10, 115, 186);
     display: flex;
     justify-content: space-between;
     align-items: center;
