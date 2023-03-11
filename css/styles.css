@@ -8,13 +8,14 @@
 }
 
 .contenedor {
+    background-color: black;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 90px 1fr 90px;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    "header     header  header  header"
-    "main        main   main    main"
-    "footer     footer  footer  footer";
+    "header     header  header  header  header   header  header header"
+    ".        main   main    main    main    main    main    ."
+    "footer     footer  footer  footer  footer  footer  footer  footer";
 }
 
 .header {
@@ -30,7 +31,6 @@
 
 .footer {
     grid-area: footer;
-    background-color: rgb(10, 115, 186);
 }
 
 
@@ -41,9 +41,8 @@
     width: 100%;
     background-color: rgb(10, 115, 186);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 80px 10px 80px;
     align-content: center;
 }
 
@@ -51,7 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    gap: 10px;
+    gap: 5px;
 }
 
 
@@ -60,9 +59,28 @@
     color: white;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     width: 150px;
     height: auto;
+}
+
+.btn-menu {
+    width: 100px;
+    height: auto;
+    font-size: 1rem;
+    background-color: rgb(10, 115, 186);
+    border-color: rgb(10, 115, 186);
+}
+
+.btn-menu:hover {
+    background-color: rgb(10, 151, 245);
+    border-color: rgb(10, 151, 245);
+
 }
 
 /* main */
@@ -93,6 +111,7 @@
 
 .principal__img {
     width: 90%;
+    height: auto;
     margin: auto;
 }
 
@@ -144,13 +163,14 @@
     
 }
 
-.disco__item :hover {
-    transform: scale(1.05);
-    transition: transform .3s;
-}
 
 .disco__img {
     width: 100%;
+}
+
+.disco__img :hover {
+    transform: scale(1.05);
+    transition: transform .3s;
 }
 
 .disco__item video {
@@ -174,26 +194,31 @@
 /* footer */
 
 .footer__items {
+    background-color: rgb(10, 115, 186); 
     color: white;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;    
-    padding: 10px;
-    gap: 10px;
+    justify-content: space-around;
+    align-items: center;   
     
-
 }
 
-
-.logo-pie-derecho-reservado {
-    width: 12px;
+.footer__items p {
+    margin: 0;
+    padding: 10px 0px;
 }
 
-.social-media {
-    width: 20px;
-    height: auto;
+.footer__item {
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 20px;
+}
+
+
+.footer__item a {
+    text-decoration: none;
+    color: white;
 }
 
 /* media queries */
