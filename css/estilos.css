@@ -66,10 +66,6 @@ ul {
   background-color: rgb(10, 115, 186);
   border-color: rgb(10, 115, 186);
 }
-.btn-menu :hover {
-  background-color: rgb(10, 151, 245);
-  border-color: rgb(10, 151, 245);
-}
 
 .principal {
   background-color: black;
