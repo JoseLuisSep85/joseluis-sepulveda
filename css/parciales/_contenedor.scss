@@ -1,0 +1,11 @@
+.contenedor {
+    background-color: $color-fondo;
+    color: $color-textos;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    "header     header  header  header  header   header  header header"
+    ".        main   main    main    main    main    main    ."
+    "footer     footer  footer  footer  footer  footer  footer  footer";
+}

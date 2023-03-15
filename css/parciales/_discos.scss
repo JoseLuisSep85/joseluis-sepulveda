@@ -1,0 +1,30 @@
+.discos {
+    background-color: $color-fondo;
+    color: $color-textos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+.disco__item {
+    padding: 20px;
+    text-align: justify;
+    width: 450px;
+    
+   .disco__titulo {
+        text-align: center;
+    }
+
+    .disco__img {
+        width: 100%;
+        :hover {
+            transform: scale(1.05);
+            transition: transform .3s;
+        }
+    } 
+    
+    video {
+        width: 100%;
+    }    
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width:768px) {
+    .principal__parrafo {
+        font-size: 16px;
+        width: 90%;
+    
+    }
+    
+}
+
+@media screen and (max-width:420px) {
+
+    .footer__items {
+        text-align: center;
+    }
+    .principal__img {
+       padding-top: 30px;
+       margin-top: 30px;
+    }
+
+    .menu {
+        justify-content: space-around;
+        align-content: center;
+  
+    }
+}

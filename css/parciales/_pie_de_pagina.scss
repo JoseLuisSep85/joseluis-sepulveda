@@ -1,0 +1,25 @@
+.footer__items {
+    background-color:$color-principal ; 
+    color: $color-textos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    p {
+        margin: 0;
+        padding: 10px 0px;
+    }
+    
+    .footer__item {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: $color-textos;
+        }
+    }
+}

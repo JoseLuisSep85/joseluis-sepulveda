@@ -1,0 +1,42 @@
+.menu {
+    width: 100%;
+    background-color:$color-principal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 5px;
+        a {
+            text-decoration: none;
+            color: $color-textos;
+
+        }
+    }    
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-menu {
+    width: 100px;
+    height: auto;
+    font-size: 1rem;
+    background-color: $color_principal;
+    border-color: $color_principal;
+
+    :hover {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+    }
+}

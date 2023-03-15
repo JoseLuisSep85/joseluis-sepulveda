@@ -1,0 +1,50 @@
+.principal {
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    &____items {
+        display: flex;
+        flex-direction: column;
+        color: $color-textos;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    &__img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__titulo {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 3rem;
+        font-weight: 500;
+    
+    }
+    &__subtitulo {
+        text-align: center;
+        font-family: Roboto;
+        font-size: 2rem;
+    
+    }
+    &__parrafo {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+        font-size: 20px;
+    
+    }
+
+}
+
+.biografia {
+    display:flex;
+}

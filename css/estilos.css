@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.contenedor {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "header     header  header  header  header   header  header header" ".        main   main    main    main    main    main    ." "footer     footer  footer  footer  footer  footer  footer  footer";
+}
+
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.menu {
+  width: 100%;
+  background-color: rgb(10, 115, 186);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.menu__item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 5px;
+}
+.menu__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-menu {
+  width: 100px;
+  height: auto;
+  font-size: 1rem;
+  background-color: rgb(10, 115, 186);
+  border-color: rgb(10, 115, 186);
+}
+.btn-menu :hover {
+  background-color: rgb(10, 151, 245);
+  border-color: rgb(10, 151, 245);
+}
+
+.principal {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.principal____items {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+.principal__img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.principal__titulo {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.principal__subtitulo {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2rem;
+}
+.principal__parrafo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.biografia {
+  display: flex;
+}
+
+.discos {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.disco__item {
+  padding: 20px;
+  text-align: justify;
+  width: 450px;
+}
+.disco__item .disco__titulo {
+  text-align: center;
+}
+.disco__item .disco__img {
+  width: 100%;
+}
+.disco__item .disco__img :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.disco__item video {
+  width: 100%;
+}
+
+.form {
+  width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-auto {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__items {
+  background-color: rgb(10, 115, 186);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__items p {
+  margin: 0;
+  padding: 10px 0px;
+}
+.footer__items .footer__item {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+.footer__items .footer__item a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .principal__parrafo {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__items {
+    text-align: center;
+  }
+  .principal__img {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .menu {
+    justify-content: space-around;
+    align-content: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */
