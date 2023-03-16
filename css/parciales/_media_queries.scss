@@ -1,25 +1,62 @@
 @media screen and (max-width:768px) {
-    .principal__parrafo {
-        font-size: 16px;
-        width: 90%;
-    
+
+    .principal {
+
+        &__titulo {
+            font-size: 2rem;
+        }
+
+        &__parrafo {
+            font-size: 16px;
+            width: 100%;
+            margin: auto;
+        
+        }
+
+        &__img {
+            width: 100%; 
+            margin-top: 30px;
+        }
+
     }
     
 }
 
 @media screen and (max-width:420px) {
+    .principal {
 
-    .footer__items {
-        text-align: center;
-    }
-    .principal__img {
-       padding-top: 30px;
-       margin-top: 30px;
+        &__titulo {
+            font-size: 1.5rem;
+        }
+
+        &__parrafo {
+            font-size: 16px;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+        }
+
+        &__items {
+            text-align: center;
+            padding: 10px;
+        }
+
+        &__img {
+            width: 100%; 
+            margin-top: 30px;
+        }
+
+
     }
 
     .menu {
         justify-content: space-around;
         align-content: center;
   
+    }
+
+    .footer__items {
+        text-align: center;
+        padding: 5px;
     }
 }

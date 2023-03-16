@@ -8,12 +8,14 @@
 }
 
 .disco__item {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    text-align: center;
-    width: 450px;
+    width: 350px;
     
    .disco__titulo {
         text-align: center;
+        font-size: 2rem;
     }
 
     .disco__img {
@@ -24,7 +26,9 @@
         }
     } 
     
-    video {
-        width: 100%;
-    }    
+    
+    p {
+        padding: 15px;
+        text-align: justify;
+    }
 }
