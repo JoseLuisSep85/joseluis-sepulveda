@@ -10,8 +10,8 @@
 .disco__item {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 350px;
+    padding: 15px;
+    width: 30%;
     
    .disco__titulo {
         text-align: center;
@@ -20,9 +20,9 @@
 
     .disco__img {
         width: 100%;
-        :hover {
+        &:hover {
             transform: scale(1.05);
-            transition: transform .3s;
+            transition: transform .2s;
         }
     } 
     

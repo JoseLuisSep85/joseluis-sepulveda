@@ -12,7 +12,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: "header     header  header  header  header   header  header header" ".        main   main    main    main    main    main    ." "footer     footer  footer  footer  footer  footer  footer  footer";
+  grid-template-areas: "header     header  header  header  header      header  header  header" "main       main    main    main    main        main    main    main" "footer     footer  footer  footer  footer      footer  footer  footer";
 }
 
 .header {
@@ -37,6 +37,7 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  padding: 20px 0px;
 }
 .menu__item {
   display: flex;
@@ -83,7 +84,7 @@ ul {
   align-content: center;
 }
 .principal__img {
-  width: 90%;
+  width: 60%;
   height: auto;
   margin: auto;
   display: flex;
@@ -105,7 +106,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
-  width: 90%;
+  width: 60%;
   margin: auto;
   text-align: justify;
   font-size: 20px;
@@ -126,8 +127,8 @@ ul {
 .disco__item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  width: 350px;
+  padding: 15px;
+  width: 30%;
 }
 .disco__item .disco__titulo {
   text-align: center;
@@ -136,9 +137,9 @@ ul {
 .disco__item .disco__img {
   width: 100%;
 }
-.disco__item .disco__img :hover {
+.disco__item .disco__img:hover {
   transform: scale(1.05);
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 .disco__item p {
   padding: 15px;
@@ -180,27 +181,48 @@ ul {
   color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .principal__titulo {
+    font-size: 3rem;
+  }
+  .principal__parrafo {
+    font-size: 16px;
+    width: 65%;
+    margin: auto;
+  }
+  .principal__img {
+    width: 65%;
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .principal__titulo {
     font-size: 2rem;
   }
   .principal__parrafo {
     font-size: 16px;
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
   .principal__img {
-    width: 100%;
+    width: 80%;
     margin-top: 30px;
   }
+  .disco__item {
+    width: 45%;
+    padding: 10px;
+  }
+  .menu {
+    padding: 20px 20px;
+  }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   .principal__titulo {
     font-size: 1.5rem;
   }
   .principal__parrafo {
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     align-items: center;
   }
@@ -209,15 +231,20 @@ ul {
     padding: 10px;
   }
   .principal__img {
-    width: 100%;
+    width: 90%;
     margin-top: 30px;
+  }
+  .disco__item {
+    width: 85%;
+    padding: 10px;
   }
   .menu {
     justify-content: space-around;
     align-content: center;
+    padding: 20px 20px;
   }
   .footer__items {
     text-align: center;
-    padding: 5px;
+    padding: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */
