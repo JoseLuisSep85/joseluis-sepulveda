@@ -215,6 +215,9 @@ ul {
   .menu {
     padding: 20px 20px;
   }
+  .form {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 480px) {
   .principal__titulo {
@@ -242,6 +245,9 @@ ul {
     justify-content: space-around;
     align-content: center;
     padding: 20px 20px;
+  }
+  .form {
+    width: 300px;
   }
   .footer__items {
     text-align: center;
