@@ -13,21 +13,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="contenedor">
+    
     <!-- Cabecera -->
+    
     <header class="header">
-        <nav class="menu">
-            <img class="logo" src="../images/logos/Logo-Sin-Bandera.png" alt="Sin bandera">
-            <ul class="menu__item">
-                <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="../index.html">Inicio</a></button></li>
-                <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./biografia.html">Biografía</a></button></li>
-                <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./discografia.html">Discografía</a></button></li>
-                <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./videos.html">Videos</a></button></li>
-                <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./contacto.html">Contacto</a></button></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md menu">
+            <div class="container-fluid">
+                <img class="logo" src="../images/logos/Logo-Sin-Bandera.png" alt="Sin bandera">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu__item navbar navbar-expand-lg">
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="../index.html">Inicio</a></button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./biografia.html">Biografía</a></button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./discografia.html">Discografía</a></button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./videos.html">Videos</a></button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./contacto.html">Contacto</a></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
     </header>
 
     <!-- Cuerpo principal -->
+   
     <main class="main">
         <section class="discos">
             <div class="disco__item">
@@ -62,6 +72,7 @@
     </main>
 
     <!-- pie de pagina -->
+    
     <footer class="footer">
         <div class="footer__items">
             <p>Diseñado por Jose Luis <i class="bi bi-c-circle" alt="copyright"></i> Todos los derechos reservados - 2023</p>

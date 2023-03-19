@@ -37,7 +37,6 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 20px 0px;
 }
 .menu__item {
   display: flex;
@@ -53,6 +52,7 @@
 .logo {
   width: 150px;
   height: auto;
+  background-color: rgb(10, 115, 186);
 }
 
 ul {
@@ -66,6 +66,10 @@ ul {
   font-size: 1rem;
   background-color: rgb(10, 115, 186);
   border-color: rgb(10, 115, 186);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .principal {
