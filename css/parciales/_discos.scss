@@ -13,12 +13,12 @@
     padding: 15px;
     width: 30%;
     
-   .disco__titulo {
+   &__titulo {
         text-align: center;
         font-size: 2rem;
     }
 
-    .disco__img {
+    &__img {
         width: 100%;
         &:hover {
             transform: scale(1.05);

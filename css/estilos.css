@@ -37,6 +37,7 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  position: sticky;
 }
 .menu__item {
   display: flex;
@@ -80,7 +81,7 @@ ul {
   gap: 10px;
   justify-content: space-between;
 }
-.principal____items {
+.principal__items {
   display: flex;
   flex-direction: column;
   color: white;
@@ -135,14 +136,14 @@ ul {
   padding: 15px;
   width: 30%;
 }
-.disco__item .disco__titulo {
+.disco__item__titulo {
   text-align: center;
   font-size: 2rem;
 }
-.disco__item .disco__img {
+.disco__item__img {
   width: 100%;
 }
-.disco__item .disco__img:hover {
+.disco__item__img:hover {
   transform: scale(1.05);
   transition: transform 0.2s;
 }
@@ -151,8 +152,29 @@ ul {
   text-align: justify;
 }
 
+.contacto {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  margin: 30px;
+}
+.contacto__datos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+.contacto h3 {
+  font-weight: 700;
+}
+.contacto p {
+  margin: 0;
+  padding: 10px;
+}
+
 .form {
-  width: 500px;
+  width: 100%;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -160,7 +182,7 @@ ul {
 
 .col-auto {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .footer__items {
@@ -175,15 +197,33 @@ ul {
   margin: 0;
   padding: 10px 0px;
 }
-.footer__items .footer__item {
+.footer__items ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   gap: 20px;
 }
-.footer__items .footer__item a {
+.footer__items ul a {
   text-decoration: none;
   color: white;
+}
+.footer__items i {
+  font-size: 1.5rem;
+}
+.footer__items .bi-instagram:hover {
+  color: mediumvioletred;
+}
+.footer__items .bi-twitter:hover {
+  color: rgb(8, 154, 239);
+}
+.footer__items .bi-youtube:hover {
+  color: red;
+}
+.footer__items .bi-spotify:hover {
+  color: rgb(13, 201, 13);
+}
+.footer__items .bi-c-circle {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1200px) {

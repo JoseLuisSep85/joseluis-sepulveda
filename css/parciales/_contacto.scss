@@ -1,0 +1,25 @@
+.contacto{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    margin: 30px;
+
+    &__datos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        
+    }
+    h3 {
+        font-weight: 700;
+    }
+    
+    p {
+        margin: 0;
+        padding: 10px;
+    }
+
+
+}

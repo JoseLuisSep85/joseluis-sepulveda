@@ -19,7 +19,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-md menu">
             <div class="container-fluid">
-                <img class="logo rotate-vert-center" src="../images/logos/Logo-Sin-Bandera.webp" alt="Sin bandera">
+                <a href="../index.html"><img class="logo rotate-vert-center" src="../images/logos/Logo-Sin-Bandera.webp" alt="Sin bandera"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,7 @@
                         <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./biografia.html">Biografía</a></button></li>
                         <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./discografia.html">Discografía</a></button></li>
                         <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./videos.html">Videos</a></button></li>
-                        <li><button type="button" class="btn btn-primary btn-lg btn-menu"><a href="./contacto.html">Contacto</a></button></li>
+                        <li><button type="button" class="btn btn-primary btn-lg btn-menu active"><a href="./contacto.html">Contacto</a></button></li>
                     </ul>
                 </div>
             </div>
@@ -39,31 +39,42 @@
     <!-- Cuerpo principal -->
    
     <main class="main">
-        <form class="form">
-            <div class="contacto__form">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.cl">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                    <textarea required class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Escribe aquí tu comentario"></textarea>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Desea recibir nuestro NewsLetter
-                    </label>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-                  </div>
+        <div class="contacto">
+            <div class="contacto__datos">
+                <h3>CONTACTO</h3>
+                <p>Para contraciones contactarse con:  Ana García</p>
+                <p><i class="bi bi-telephone-fill"></i> +52 (55) 8920 2852</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Campos Eliseos No. 204 Polanco Chapuletpec, Ciudad de México 11560 </p>
+                <p><i class="bi bi-envelope"></i> agarcia@westwoodent.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240864.08481701676!2d-99.14361265000001!3d19.3907336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2zQ2l1ZGFkIGRlIE3DqXhpY28sIENETVgsIE3DqXhpY28!5e0!3m2!1ses-419!2scl!4v1679923937330!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="350px"></iframe>
             </div>
-        </form>    
+            <form class="form">
+                <div class="contacto__form">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input required type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.cl">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                        <textarea required class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Escribe aquí tu comentario"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Desea recibir nuestro NewsLetter
+                        </label>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                      </div>
+                </div>
+            </form>    
+        </div>
+        
     </main>
 
     <!-- pie de pagina -->
@@ -71,7 +82,7 @@
     <footer class="footer">
         <div class="footer__items">
             <p>Diseñado por Jose Luis <i class="bi bi-c-circle" alt="copyright"></i> Todos los derechos reservados - 2023</p>
-            <ul class="footer__item">
+            <ul>
                 <li><a href="https://www.instagram.com/sinbandera/" alt="instagram" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://twitter.com/sinbandera" alt="twitter" target="_blank"><i class="bi bi-twitter"></i></a></li>
                 <li><a href="https://www.youtube.com/user/SinbanderaVEVO" alt="youtube" target="_blank"><i class="bi bi-youtube"></i></a></li>
