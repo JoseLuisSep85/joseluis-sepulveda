@@ -7,7 +7,7 @@
  
 }
 
-.disco__item {
+.disco {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -21,8 +21,8 @@
     &__img {
         width: 100%;
         &:hover {
-            transform: scale(1.05);
-            transition: transform .2s;
+            transform: scale(1.04);
+            transition: transform 0.3s ease-in-out;
         }
     } 
     
@@ -31,4 +31,6 @@
         padding: 15px;
         text-align: justify;
     }
+
+
 }

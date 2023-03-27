@@ -20,15 +20,22 @@
 
     }
 
+    .disco {
+    
+        width: 45%;
+        padding: 10px;
+        
+        &__titulo {
+            font-size: 2rem;
+        }
+    }
+
 }
 
 @media screen and (max-width:768px) {
 
     .principal {
 
-        &__titulo {
-            font-size: 2rem;
-        }
 
         &__parrafo {
             font-size: 16px;
@@ -43,10 +50,11 @@
         }
 
     }
-    .disco__item {
+    .disco {
     
-        width: 45%;
+        width: 70%;
         padding: 10px;
+        
     }
     .menu {
         padding: 20px 20px;
@@ -57,6 +65,11 @@
 
     }
 
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
     
 }
 
@@ -65,7 +78,7 @@
     .principal {
 
         &__titulo {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         &__parrafo {
@@ -88,7 +101,7 @@
 
     }
 
-    .disco__item {
+    .disco {
     
         width: 85%;
         padding: 10px;

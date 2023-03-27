@@ -44,6 +44,7 @@
   flex-wrap: wrap;
   list-style-type: none;
   gap: 5px;
+  text-align: right;
 }
 .menu__item a {
   text-decoration: none;
@@ -130,33 +131,34 @@ ul {
   justify-content: center;
 }
 
-.disco__item {
+.disco {
   display: flex;
   flex-direction: column;
   padding: 15px;
   width: 30%;
 }
-.disco__item__titulo {
+.disco__titulo {
   text-align: center;
   font-size: 2rem;
 }
-.disco__item__img {
+.disco__img {
   width: 100%;
 }
-.disco__item__img:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s;
+.disco__img:hover {
+  transform: scale(1.04);
+  transition: transform 0.3s ease-in-out;
 }
-.disco__item p {
+.disco p {
   padding: 15px;
   text-align: justify;
 }
 
 .contacto {
   display: flex;
+  width: 80%;
   gap: 40px;
   padding: 20px;
-  margin: 30px;
+  margin: auto;
 }
 .contacto__datos {
   display: flex;
@@ -239,11 +241,15 @@ ul {
     width: 65%;
     margin-top: 30px;
   }
-}
-@media screen and (max-width: 768px) {
-  .principal__titulo {
+  .disco {
+    width: 45%;
+    padding: 10px;
+  }
+  .disco__titulo {
     font-size: 2rem;
   }
+}
+@media screen and (max-width: 768px) {
   .principal__parrafo {
     font-size: 16px;
     width: 80%;
@@ -253,8 +259,8 @@ ul {
     width: 80%;
     margin-top: 30px;
   }
-  .disco__item {
-    width: 45%;
+  .disco {
+    width: 70%;
     padding: 10px;
   }
   .menu {
@@ -263,10 +269,14 @@ ul {
   .form {
     width: 400px;
   }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .principal__titulo {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .principal__parrafo {
     font-size: 16px;
@@ -282,7 +292,7 @@ ul {
     width: 90%;
     margin-top: 30px;
   }
-  .disco__item {
+  .disco {
     width: 85%;
     padding: 10px;
   }

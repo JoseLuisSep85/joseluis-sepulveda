@@ -12,6 +12,7 @@
         flex-wrap: wrap;
         list-style-type: none;
         gap: 5px;
+        text-align: right;
         a {
             text-decoration: none;
             color: $color-textos;
@@ -38,6 +39,7 @@ ul {
     background-color: $color_principal;
     border-color: $color_principal;
 }
+
 
 .navbar-collapse {
     flex-grow: 0;
